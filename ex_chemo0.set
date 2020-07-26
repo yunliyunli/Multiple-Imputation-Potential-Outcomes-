@@ -1,0 +1,9 @@
+datain rest;
+    dataout chemo0;
+   continuous  age_survey  ;
+   categorical  size ncode grade race  high_risk  insgroup education2 m6 k5 rs chemo0 site27 comrb;
+   bounds  age_survey(>25,<102) ;
+   transfer  chemo1 ghi rs study_id;
+   iterations 1;
+    multiples 1;
+Run;
